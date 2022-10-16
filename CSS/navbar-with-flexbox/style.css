@@ -10,6 +10,8 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+/* Style the navbar */
+
 .navbar-container {
   display: flex;
   justify-content: center;
