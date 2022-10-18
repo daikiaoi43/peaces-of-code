@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+/* Style Testimonials */
+
+.title {
+  font-size: 29px;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 20px 0;
+  letter-spacing: 3px;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+}
+.testimonials {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column; /* each row contain 1 testimonial */
+  gap: 1rem;
+  padding: 0px 20px;
+}
+
+.testimonial {
+  background-color: rgb(118, 145, 169);
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+
+.testimonial h3 {
+  font-size: 21px;
+  letter-spacing: 2px;
+}
+
+.testimonial p {
+  margin-top: 15px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+/* Make Testimonials responsive */
+
+@media (min-width: 768px) {
+  /* display testimonials in one row */
+  .testimonials {
+    flex-direction: row;
+  }
+  .testimonials .testimonial {
+    flex: 1;
+    align-self: stretch;
+  }
+}
