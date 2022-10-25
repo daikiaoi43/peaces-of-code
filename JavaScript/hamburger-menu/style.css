@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background-color: rgb(205 205 207);
+}
+
+/* Style the navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  background-color: rgb(31 58 154);
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.links {
+  display: flex;
+}
+
+.links li {
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+.links li a {
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger-menu {
+  display: none;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  background-color: white;
+  width: 25px;
+  height: 3px;
+  border-radius: 3px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Adjust style for viewport less than 768 */
+/*
+- move the logo to the left side
+- change the links from a row into a column
+- hide them by moving them 100% to the right
+- display the hamburger menu
+*/
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .logo {
+    margin-left: 40px;
+  }
+  .links {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 7vh;
+    right: 0;
+    width: 50%;
+    height: 93%;
+    background-color: rgb(31 58 154);
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .links li {
+    margin-top: 40px;
+  }
+  /* hide hamburger menu */
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+/* This class will be added to show links when the hamburger is clicked */
+.show-vertical-links {
+  transform: translateX(0%);
+}
+
+/* (animate-hamburger) will be added to (hamburger-menu) div to display (X instead of 3 lines) when the hamburger menu is clicked */
+.animate-hamburger .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  transition: transform 0.2s ease-in;
+}
+.animate-hamburger .line2 {
+  opacity: 0;
+  transition: transform 0.2s ease-in;
+}
+.animate-hamburger .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+  transition: transform 0.2s ease-in;
+}
