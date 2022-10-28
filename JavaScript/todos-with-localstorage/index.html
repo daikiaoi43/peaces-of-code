@@ -4,22 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Todo List</title>
   </head>
   <body>
     <!-- header -->
-    <header class="header">Manage your todo List</header>
+    <header class="header"><h1>Manage your todo List</h1></header>
     <!-- todo-form -->
     <form class="todo-form">
-      <input type="text" class="todo" placeholder="Please enter a todo..." />
+      <input type="text" class="todo" placeholder="Please enter new todo..." />
       <button class="add">Add</button>
     </form>
     <!-- todo-list -->
     <div class="todo-list">
+      <!-- todo-item -->
       <div class="todo-item">
         <p class="text">Some text goes here</p>
-        <button class="status">Finished</button>
-        <button class="delete">Delete</button>
+        <button class="finish">finish</button>
+        <button class="delete">delete</button>
+      </div>
+      <div class="todo-item">
+        <p class="text">Some text goes here some text goes here some</p>
+        <button class="finish">finish</button>
+        <button class="delete">delete</button>
+      </div>
+      <div class="todo-item">
+        <p class="text">Some text goes here</p>
+        <button class="finish">finish</button>
+        <button class="delete">delete</button>
       </div>
     </div>
   </body>

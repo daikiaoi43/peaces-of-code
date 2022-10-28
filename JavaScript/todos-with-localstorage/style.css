@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: azure;
+}
+
+/* || header styles */
+
+.header {
+  text-align: center;
+  padding: 40px;
+  text-transform: capitalize;
+}
+
+/* || todo-form styles */
+
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.todo-form .todo {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgb(159, 207, 207);
+  padding-left: 15px;
+  font-size: 18px;
+  margin: 10px 0 0 10px;
+  height: 40px;
+}
+
+.todo-form .todo:focus {
+  outline: none;
+  border: 1px solid rgb(112, 162, 162);
+}
+
+.todo-form .add {
+  padding: 0 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(106, 210, 210);
+  background-color: rgb(159, 207, 207);
+  font-size: 18px;
+  margin: 10px;
+  height: 40px;
+}
+
+.todo-form .add:active {
+  border: 1px solid rgb(218, 236, 236);
+}
+
+.todo-form .add:focus {
+  outline: none;
+  border: 1px solid rgb(112, 162, 162);
+}
+
+/* || todo-list styles */
+
+.todo-list {
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.todo-item:hover {
+  background-color: rgb(227, 238, 238);
+}
+
+.todo-item .text {
+  width: 100%;
+  margin-left: 10px;
+  font-size: 19px;
+}
+
+.todo-item .finish {
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(25, 151, 11);
+  background-color: rgb(25, 151, 11);
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+  height: 40px;
+}
+
+.todo-item .finish:active {
+  border: 1px solid rgb(190, 229, 186);
+}
+
+.todo-item .finish:focus {
+  outline: none;
+  border: 2px solid rgb(14, 109, 3);
+}
+
+.todo-item .delete {
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(235, 18, 18);
+  background-color: rgb(235, 18, 18);
+  color: white;
+  font-size: 18px;
+  height: 40px;
+}
+
+.todo-item .delete:active {
+  border: 1px solid rgb(240, 196, 196);
+}
+
+.todo-item .delete:focus {
+  outline: none;
+  border: 2px solid rgb(197, 9, 9);
+}
+
+.todo-item:nth-of-type(odd) {
+  background-color: rgb(232, 239, 239);
+}
+
+button {
+  cursor: pointer;
+}
