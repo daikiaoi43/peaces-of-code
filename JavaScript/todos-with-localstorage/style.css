@@ -9,6 +9,10 @@ body {
   background-color: azure;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* || header styles */
 
 .header {
@@ -41,7 +45,7 @@ body {
   border: 1px solid rgb(112, 162, 162);
 }
 
-.todo-form .add {
+.todo-form .add-btn {
   padding: 0 20px;
   border-radius: 5px;
   border: 1px solid rgb(106, 210, 210);
@@ -51,13 +55,13 @@ body {
   height: 40px;
 }
 
-.todo-form .add:active {
+.todo-form .add-btn:active {
   border: 1px solid rgb(218, 236, 236);
 }
 
-.todo-form .add:focus {
+.todo-form .add-btn:focus {
   outline: none;
-  border: 1px solid rgb(112, 162, 162);
+  border: 2px solid rgb(112, 162, 162);
 }
 
 /* || todo-list styles */
@@ -85,7 +89,7 @@ body {
   font-size: 19px;
 }
 
-.todo-item .finish {
+.todo-item .finish-btn {
   padding: 0 10px;
   border-radius: 5px;
   border: 1px solid rgb(25, 151, 11);
@@ -96,16 +100,16 @@ body {
   height: 40px;
 }
 
-.todo-item .finish:active {
+.todo-item .finish-btn:active {
   border: 1px solid rgb(190, 229, 186);
 }
 
-.todo-item .finish:focus {
+.todo-item .finish-btn:focus {
   outline: none;
   border: 2px solid rgb(14, 109, 3);
 }
 
-.todo-item .delete {
+.todo-item .delete-btn {
   padding: 0 10px;
   border-radius: 5px;
   border: 1px solid rgb(235, 18, 18);
@@ -115,19 +119,15 @@ body {
   height: 40px;
 }
 
-.todo-item .delete:active {
+.todo-item .delete-btn:active {
   border: 1px solid rgb(240, 196, 196);
 }
 
-.todo-item .delete:focus {
+.todo-item .delete-btn:focus {
   outline: none;
   border: 2px solid rgb(197, 9, 9);
 }
 
 .todo-item:nth-of-type(odd) {
   background-color: rgb(232, 239, 239);
-}
-
-button {
-  cursor: pointer;
 }
