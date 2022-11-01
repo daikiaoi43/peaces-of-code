@@ -89,28 +89,6 @@ button {
   font-size: 19px;
 }
 
-/*
-.todo-item .finish-btn {
-  padding: 0 10px;
-  border-radius: 5px;
-  border: 1px solid rgb(151, 135, 11);
-  background-color: rgb(151, 135, 11);
-  color: white;
-  font-size: 18px;
-  margin-right: 10px;
-  height: 40px;
-}
-
-.todo-item .finish-btn:active {
-  border: 1px solid rgb(190, 229, 186);
-}
-
-.todo-item .finish-btn:focus {
-  outline: none;
-  border: 2px solid rgb(14, 109, 3);
-}
-*/
-
 .todo-item .delete-btn {
   padding: 0 10px;
   border-radius: 5px;

@@ -20,14 +20,6 @@ function addTodo(e) {
   text.appendChild(todoTextNode);
   text.classList.add("text");
 
-  /*
-  // create "finish-btn" element
-  const finishBtnTextNode = document.createTextNode("finish");
-  const finishBtn = document.createElement("button");
-  finishBtn.appendChild(finishBtnTextNode);
-  finishBtn.classList.add("finish-btn");
-  */
-
   // create "delete-btn" element
   const deleteBtnTextNode = document.createTextNode("delete");
   const deleteBtn = document.createElement("button");
@@ -37,7 +29,6 @@ function addTodo(e) {
   // create "todo-item" element
   const todoItem = document.createElement("div");
   todoItem.appendChild(text);
-  // todoItem.appendChild(finishBtn);
   todoItem.appendChild(deleteBtn);
   todoItem.classList.add("todo-item");
 
@@ -57,10 +48,5 @@ todoItems.forEach((item) => {
       // remove item when delete-btn is clicked
       item.remove();
     }
-    // else if (e.target.className === "finish-btn") {
-    //   // toggle
-    //   item.querySelector(".text").classList.toggle("finish-todo");
-    //   item.querySelector(".finish-btn").classList.toggle("change-finish-btn");
-    // }
   });
 });
