@@ -55,13 +55,10 @@ button {
   height: 40px;
 }
 
-.todo-form .add-btn:active {
-  border: 1px solid rgb(218, 236, 236);
-}
-
+.todo-form .add-btn:active,
 .todo-form .add-btn:focus {
   outline: none;
-  border: 2px solid rgb(112, 162, 162);
+  border: 2px solid rgb(136, 170, 170);
 }
 
 /* || todo-list styles */
@@ -99,13 +96,10 @@ button {
   height: 40px;
 }
 
-.todo-item .delete-btn:active {
-  border: 1px solid rgb(240, 196, 196);
-}
-
+.todo-item .delete-btn:active,
 .todo-item .delete-btn:focus {
   outline: none;
-  border: 2px solid rgb(197, 9, 9);
+  border: 2px solid rgb(206, 39, 39);
 }
 
 .todo-item:nth-of-type(odd) {
