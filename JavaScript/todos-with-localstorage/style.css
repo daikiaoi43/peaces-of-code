@@ -114,6 +114,6 @@ button {
 
 /* class to be applied when we finish a todo */
 
-.finish-todo {
+.finished-todo {
   text-decoration: line-through;
 }

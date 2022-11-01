@@ -49,4 +49,7 @@ todoItems.forEach((item) => {
       item.remove();
     }
   });
+  item.addEventListener("dblclick", (e) => {
+    item.querySelector(".text").classList.toggle("finished-todo");
+  });
 });
