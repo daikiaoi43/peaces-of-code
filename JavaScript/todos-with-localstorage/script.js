@@ -1,4 +1,4 @@
-// Selectors
+//
 const todo = document.querySelector(".todo");
 const addBtn = document.querySelector(".add-btn");
 const todoList = document.querySelector(".todo-list");
@@ -35,6 +35,7 @@ function addTodo(e) {
   // insert "todo-item" into "todo-list"
   todoList.appendChild(todoItem);
 
+  saveTodoInLocalStorage(todo.value);
   // auto focus
   todo.value = "";
   todo.focus();
@@ -53,3 +54,14 @@ todoItems.forEach((item) => {
     item.querySelector(".text").classList.toggle("finished-todo");
   });
 });
+
+function saveTodoInLocalStorage(todo) {
+  let todos;
+  if (localStorage.getItem("todos") === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem("todos"));
+  }
+  todos.push(todo);
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
